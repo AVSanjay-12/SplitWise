@@ -1,7 +1,3 @@
-Yes. At this stage I would not implement unit tests. It's a conscious engineering trade-off, not a shortcut. Your project already demonstrates service-layer logic, Spring Security, Redis, Flyway, Docker, and deployment. Integration tests are the more valuable signal for a backend project like this because they verify the complete request flow instead of isolated methods.
-
-Below is a README that's suitable for GitHub and aligned with what you've actually built.
-
 # Splitwise Backend
 
 A production-style Splitwise-inspired backend built with Spring Boot, PostgreSQL, and Redis. The application supports expense sharing with multiple split strategies, JWT authentication, group-based authorization, settlements, Redis caching, and distributed rate limiting.
