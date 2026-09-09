@@ -88,105 +88,34 @@ A production-style Splitwise-inspired backend built with Spring Boot, PostgreSQL
 
 ## Tech Stack
 
-|
-Category
-
-|
-
-Technology
-
-|
-| --- | --- |
-|
-
-Language
-
-|
-
+Language:
 Java 21
 
-|
-|
-
-Framework
-
-|
-
+Framework:
 Spring Boot
-
-|
-|
-
 Security
-
-|
-
 Spring Security, JWT
 
-|
-|
-
-Database
-
-|
-
+Database:
 PostgreSQL
 
-|
-|
-
-Cache
-
-|
-
+Cache:
 Redis
 
-|
-|
-
-ORM
-
-|
-
+ORM:
 Spring Data JPA (Hibernate)
 
-|
-|
-
-Migrations
-
-|
-
+Migrations:
 Flyway
 
-|
-|
-
-Documentation
-
-|
-
+Documentation:
 Swagger / OpenAPI
 
-|
-|
-
-Containerization
-
-|
-
+Containerization:
 Docker, Docker Compose
 
-|
-|
-
-Build Tool
-
-|
-
+Build Tool:
 Maven
-
-|
 
 ## Architecture
 
@@ -208,105 +137,35 @@ Spring Boot REST API
 
 ## API Highlights
 
-|
-Endpoint
-
-|
-
-Description
-
-|
-| --- | --- |
-|
-
 `POST /users`
-
-|
-
 Register user
 
-|
-|
-
 `POST /auth/login`
-
-|
-
 Login and receive JWT
 
-|
-|
-
 `GET /auth/me`
-
-|
-
 Current authenticated user
 
-|
-|
-
 `POST /groups`
-
-|
-
 Create group
 
-|
-|
-
 `POST /groups/{groupId}/users/{userId}`
-
-|
-
 Add member
 
-|
-|
-
 `GET /groups/{groupId}/members`
-
-|
-
 View group members
 
-|
-|
-
 `POST /expenses`
-
-|
-
 Create expense
 
-|
-|
-
 `GET /expenses/groups/{groupId}/balances`
-
-|
-
 View balances
 
-|
-|
-
 `GET /expenses/groups/{groupId}`
-
-|
-
 Expense history
 
-|
-|
-
 `POST /expenses/settle`
-
-|
-
 Settle balances
-
-|
 
 Interactive API documentation is available through Swagger UI after the application starts.
 
